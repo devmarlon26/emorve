@@ -1,0 +1,63 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "907978ee-524c-4375-b063-2d2410201667": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Emorve.svg",
+            "image_width": 100,
+            "alignment": ""
+          }
+        },
+        "1b116fdf-13c9-4b10-bf15-f7a76938b342": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Discover",
+            "menu": "discover"
+          }
+        },
+        "87a1ea37-0944-4971-89be-4614abcdd881": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Resource",
+            "menu": "resource"
+          }
+        },
+        "650c4797-6951-4994-9e30-2605ba0dcacd": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Legal",
+            "menu": "legal"
+          }
+        }
+      },
+      "block_order": [
+        "907978ee-524c-4375-b063-2d2410201667",
+        "1b116fdf-13c9-4b10-bf15-f7a76938b342",
+        "87a1ea37-0944-4971-89be-4614abcdd881",
+        "650c4797-6951-4994-9e30-2605ba0dcacd"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 36,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
