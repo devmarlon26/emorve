@@ -1,0 +1,56 @@
+{{ 'company-logo.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+   assign heading_title = section.settings.heading_title
+%}
+
+<section class="company">
+    <div class="company__container page-width-desktop">
+        <div class="company__header">
+            <h6 class="company__header-title">{{ heading_title }}</h6>
+        </div>
+        <div class="company__logo-container">
+            {% for block in section.blocks %}
+            <div class="company__logo">
+                <img class="company__logo-img" loading="lazy" width="{{ block.settings.company_logo.width }}"   height="{{ block.settings.company_logo.height }}" src="{{ block.settings.company_logo | img_url: 'master' }}" alt="company logo">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "class": "section-header",
+  "max_blocks": 6,
+  "settings": [
+    {
+        "type": "text",
+        "id": "heading_title",
+        "label": "Heading",
+        "default": "Lorem ipsum"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "Logo",
+        "name": "Company logo",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "company_logo",
+                "label": "Image"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Company logo",
+        "category": "Company logo"
+    }
+  ]
+}
+{% endschema %}
+
