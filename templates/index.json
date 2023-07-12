@@ -39,6 +39,58 @@
         "show_text_below": false
       }
     },
+    "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e": {
+      "type": "company-logo",
+      "blocks": {
+        "3c3bffe8-9dcf-4960-b349-6e6f10f57c88": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/06ee98edfed241ad77a2bd6148411110.svg"
+          }
+        },
+        "f1d764f1-9632-45eb-8fdb-5eec5809a9c9": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Asana.png"
+          }
+        },
+        "ca2f335e-80bc-4767-8584-9c3b351f0ee5": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Group_9.svg"
+          }
+        },
+        "063f17fa-4f8c-4777-b5d4-f38dc6a1f898": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Buzzfeed.svg"
+          }
+        },
+        "fd4f5059-5148-4742-8a85-36db3eba59de": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Mask_Group.png"
+          }
+        },
+        "b374c1b6-85f1-446a-ba72-7f6616bc8400": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Walmart.png"
+          }
+        }
+      },
+      "block_order": [
+        "3c3bffe8-9dcf-4960-b349-6e6f10f57c88",
+        "f1d764f1-9632-45eb-8fdb-5eec5809a9c9",
+        "ca2f335e-80bc-4767-8584-9c3b351f0ee5",
+        "063f17fa-4f8c-4777-b5d4-f38dc6a1f898",
+        "fd4f5059-5148-4742-8a85-36db3eba59de",
+        "b374c1b6-85f1-446a-ba72-7f6616bc8400"
+      ],
+      "settings": {
+        "heading_title": "We help businesses all around the world to grow"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -70,6 +122,7 @@
   },
   "order": [
     "image_banner",
+    "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
     "featured_collection"
   ]
 }
