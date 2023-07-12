@@ -1,0 +1,122 @@
+#how-it-works {
+    background-image: url('https://cdn.shopify.com/s/files/1/0788/3361/5144/files/bg2.svg?v=1689154789');
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0;
+    padding: 50px 50px 125px;
+}
+
+.how-it-works {
+    margin: 0 auto;
+}
+
+.how-it-works-container  {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.how-it-works-heading h2 {
+    margin: unset;
+    color: #140626;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: -0.96px;
+}
+
+.how-it-works-p {
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+.how-it-works-p p{
+    margin: unset;
+    color: #5C5665;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.how-it-works-card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.how-it-works-card--main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 390px;
+}
+
+.how-it-works-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 2px 0px 16px 16px;
+    border: 1px solid rgba(20, 6, 38, 0.10);
+    border-top: 0;
+    background: #FFF;
+}
+
+.how-it-works-card-img {
+    max-width: 100%;
+}
+
+.how-it-works-card-num {
+    margin-top: -75px;
+    z-index: 5;
+}
+
+.how-it-works-card-h3 {
+    margin: unset;
+    color: #140626;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.64px;
+}
+
+.how-it-works-card-p {
+    margin: unset;
+    margin-top: 20px;
+    text-align: center;
+    color: #5C5665;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@media (max-width: 900px) {
+    #how-it-works {
+        padding: 30px 30px 75px;
+    }
+
+    .how-it-works-container::before {
+        display: none;
+    }
+
+    .how-it-works-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .how-it-works-heading {
+        margin-bottom: 25px;
+    }
+}
