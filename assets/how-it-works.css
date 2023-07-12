@@ -6,7 +6,6 @@
 }
 
 .how-it-works {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -53,7 +52,7 @@
 .how-it-works-card--main {
     display: flex;
     flex-direction: column;
-    flex-basis: 380px;
+    flex-basis: 390px;
 }
 
 .how-it-works-card {
