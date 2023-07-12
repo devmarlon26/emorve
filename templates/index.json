@@ -129,32 +129,42 @@
         "difference_p": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "32b1736b-3c50-458e-8fc7-b9ef1e05b2db": {
+      "type": "how-it-works",
+      "blocks": {
+        "e424d6e7-ba90-4b69-9efe-db7549506989": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/how_it_works_1.png",
+            "card_heading": "Upload Your Design",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "a52c80c2-cd39-4e50-a40f-94bff4c68cfb": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/how_it_works_2.png",
+            "card_heading": "We Put it on Beautiful Mockups",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "5e1473d1-4b2d-499a-bbc4-bd0ff2c7493c": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/how_it_works_3.svg",
+            "card_heading": "List the Products on Your Platform",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        }
+      },
+      "block_order": [
+        "e424d6e7-ba90-4b69-9efe-db7549506989",
+        "a52c80c2-cd39-4e50-a40f-94bff4c68cfb",
+        "5e1473d1-4b2d-499a-bbc4-bd0ff2c7493c"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "how_it_works_h2": "How It Works",
+        "how_it_works_p": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
       }
     }
   },
@@ -162,6 +172,6 @@
     "image_banner",
     "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
     "3cdb93ad-ed31-4185-9705-e9a066117ea7",
-    "featured_collection"
+    "32b1736b-3c50-458e-8fc7-b9ef1e05b2db"
   ]
 }
