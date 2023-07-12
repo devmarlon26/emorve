@@ -211,7 +211,7 @@
             "profile": "shopify:\/\/shop_images\/Image_1.png",
             "user": "Joel Sporer",
             "job": "Owner of ABC Store",
-            "frame": "radial-gradient(rgba(210, 190, 255, 0), rgba(159, 168, 255, 1) 100%)"
+            "frame": "radial-gradient(rgba(210, 190, 255, 1), rgba(159, 168, 255, 1) 100%)"
           }
         },
         "0cd92003-64f9-4499-958c-5a2892ae6237": {
@@ -222,7 +222,7 @@
             "profile": "shopify:\/\/shop_images\/Image_2.png",
             "user": "Elsa Sanford",
             "job": "Owner of ABC Store",
-            "frame": "radial-gradient(rgba(121, 185, 255, 1), rgba(159, 168, 255, 1) 100%)"
+            "frame": "radial-gradient(rgba(171, 211, 255, 0), rgba(159, 168, 255, 1) 100%)"
           }
         },
         "c4c10272-0cbf-4a84-aff6-7eea0d368fcd": {
