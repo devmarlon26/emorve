@@ -351,15 +351,28 @@
       {% endif %}
 
       {% if section.settings.enable_login %}
-        <a href="{{ routes.account_login_url }}" class="">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="account_login small-hide">
           <span>
             Login
+          </span>
+        </a>
+
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset medium-hide large-up-hide">
+          {% render 'icon-account' %}
+          <span class="visually-hidden">
+            {%- liquid
+              if customer
+                echo 'customer.account_fallback' | t
+              else
+                echo 'customer.log_in' | t
+              endif
+            -%}
           </span>
         </a>
       {% endif %}
 
       {% if section.settings.enable_signup %}
-        <a href="{{ routes.account_register_url }}" class="custom_button button--solid">
+        <a href="{{ routes.account_register_url }}" class="custom_button button--solid small-hide">
           <span>
             Sign Up
           </span>
