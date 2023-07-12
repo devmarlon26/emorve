@@ -1,0 +1,72 @@
+{{ 'difference.css' | asset_url | stylesheet_tag }}
+
+<section id="difference">
+    <div class="difference">
+        <div class="difference-container">
+            <div class="difference-heading"><h2>{{ section.settings.difference_h2 }}</h2></div>
+            <div class="difference-p"><p>{{ section.settings.difference_p }}</p></div>
+        </div>
+        <div class="difference-card-container">
+            {% for block in section.blocks %}
+            <div class="difference-card">
+                {% if block.settings.card_logo != blank %}
+                    <img class='difference-card-img' src="{{ block.settings.card_logo | img_url }}" alt="Card Logo">
+                {% endif %}
+                <h3 class='difference-card-h3'>{{ block.settings.card_heading }}</h3>
+                <p class='difference-card-p'>{{ block.settings.card_paragraph }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Difference",
+    "class": "section",
+    "max_blocks": 3,
+    "settings": [
+        {
+        "type": "text",
+        "label": "Heading",
+        "id": "difference_h2",
+        "default": "We make your brand shine"
+        },
+        {
+        "type": "text",
+        "label": "Paragraph",
+        "id": "difference_p",
+        "default": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
+        }
+    ],
+    "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Card Logo",
+          "id": "card_logo"
+        },
+        {
+          "type": "text",
+          "label": "Card Heading",
+          "id": "card_heading"
+        },
+        {
+          "type": "textarea",
+          "label": "Card Paragraph",
+          "id": "card_paragraph"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Difference",
+      "category": "Standard"
+    }
+  ]
+}
+{% endschema %}
