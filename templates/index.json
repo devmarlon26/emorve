@@ -219,9 +219,20 @@
           "settings": {
             "qoute": "shopify:\/\/shop_images\/Vector.png",
             "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "profile": "shopify:\/\/shop_images\/Image_2.png",
             "user": "Elsa Sanford",
             "job": "Owner of ABC Store",
             "frame": "radial-gradient(rgba(121, 185, 255, 1), rgba(159, 168, 255, 1) 100%)"
+          }
+        },
+        "c4c10272-0cbf-4a84-aff6-7eea0d368fcd": {
+          "type": "Testimonials",
+          "settings": {
+            "qoute": "shopify:\/\/shop_images\/Vector.png",
+            "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "user": "Lois Feil",
+            "job": "Owner of ABC Store",
+            "frame": "radial-gradient(rgba(194, 200, 255, 1), rgba(159, 168, 255, 1) 100%)"
           }
         }
       },
@@ -230,7 +241,8 @@
         "0602da00-af78-44ee-aac2-4c38590e1316",
         "9c14eeb2-7905-4417-8910-e10dc63814b0",
         "6c7829f5-8e21-4c06-8d4c-3602909b6ea0",
-        "0cd92003-64f9-4499-958c-5a2892ae6237"
+        "0cd92003-64f9-4499-958c-5a2892ae6237",
+        "c4c10272-0cbf-4a84-aff6-7eea0d368fcd"
       ],
       "settings": {
         "heading_title": "Trusted By Customers in the World",
