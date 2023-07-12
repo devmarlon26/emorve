@@ -1,0 +1,82 @@
+{{ 'integrate.css' | asset_url | stylesheet_tag }}
+
+<section id="integrate">
+    <div class="integrate page-width-desktop">
+        <div class="integrate-container">
+            <div class="integrate-heading"><h2>{{ section.settings.integrate_h2 }}</h2></div>
+        </div>
+        <div class="integrate-two-col">
+            <div class="integrate-col-1">
+                {% if section.settings.column_icon != blank %}
+                    <img class='integrate-icon' src="{{ section.settings.column_icon | img_url : 'master' }}" alt="Icon">
+                {% endif %}
+                <h3 class='integrate-h3'>{{ section.settings.integrate_h3 }}</h3>
+                <p class='integrate-p'>{{ section.settings.integrate_p }}</p>
+                <a href="{{ section.settings.integrate_btn_url }}" class="custom_button button--solid">
+                    <span>
+                        {{ section.settings.integrate_btn_text }}
+                    </span>
+                </a>
+            </div>
+            <div class="integrate-col-2">
+                {% if section.settings.column_img != blank %}
+                    <img class='integrate-img' src="{{ section.settings.column_img | img_url : 'master' }}" alt="Main Image">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Integrate",
+    "class": "section",
+    "settings": [
+        {
+        "type": "text",
+        "label": "Section Heading",
+        "id": "integrate_h2",
+        "default": "Integrate Your E-commerce Platforms"
+        },
+        {
+          "type": "image_picker",
+          "label": "Column Icon",
+          "id": "column_icon"
+        },
+        {
+        "type": "text",
+        "label": "Column Heading",
+        "id": "integrate_h3",
+        "default": "Connect Your Store"
+        },
+        {
+        "type": "text",
+        "label": "Paragraph",
+        "id": "integrate_p",
+        "default": "Odio dui dictumst tortor ridiculus a condimentum auctor sed, varius etiam nostra molestie interdum arcu neque, enim tellus ullamcorper at lacus."
+        },
+        {
+        "type": "text",
+        "label": "Button Text",
+        "id": "integrate_btn_text",
+        "default": "Connect It Now"
+        },
+        {
+        "type": "text",
+        "label": "Button URL",
+        "id": "integrate_btn_url"
+        },
+        {
+          "type": "image_picker",
+          "label": "Column Image",
+          "id": "column_img"
+        }
+    ],
+    "presets": [
+        {
+        "name": "Integrate",
+        "category": "Standard"
+        }
+    ]
+}
+{% endschema %}
