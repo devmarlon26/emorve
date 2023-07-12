@@ -43,8 +43,8 @@
         "padding_bottom": 20,
         "enable_search": false,
         "enable_cart": false,
-        "enable_login": true,
-        "enable_signup": true
+        "enable_login": false,
+        "enable_signup": false
       }
     }
   },

@@ -39,6 +39,96 @@
         "show_text_below": false
       }
     },
+    "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e": {
+      "type": "company-logo",
+      "blocks": {
+        "3c3bffe8-9dcf-4960-b349-6e6f10f57c88": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/06ee98edfed241ad77a2bd6148411110.svg"
+          }
+        },
+        "f1d764f1-9632-45eb-8fdb-5eec5809a9c9": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Asana.png"
+          }
+        },
+        "ca2f335e-80bc-4767-8584-9c3b351f0ee5": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Group_9.svg"
+          }
+        },
+        "063f17fa-4f8c-4777-b5d4-f38dc6a1f898": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Buzzfeed.svg"
+          }
+        },
+        "fd4f5059-5148-4742-8a85-36db3eba59de": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Mask_Group.png"
+          }
+        },
+        "b374c1b6-85f1-446a-ba72-7f6616bc8400": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Walmart.png"
+          }
+        }
+      },
+      "block_order": [
+        "3c3bffe8-9dcf-4960-b349-6e6f10f57c88",
+        "f1d764f1-9632-45eb-8fdb-5eec5809a9c9",
+        "ca2f335e-80bc-4767-8584-9c3b351f0ee5",
+        "063f17fa-4f8c-4777-b5d4-f38dc6a1f898",
+        "fd4f5059-5148-4742-8a85-36db3eba59de",
+        "b374c1b6-85f1-446a-ba72-7f6616bc8400"
+      ],
+      "settings": {
+        "heading_title": "We help businesses all around the world to grow"
+      }
+    },
+    "3cdb93ad-ed31-4185-9705-e9a066117ea7": {
+      "type": "difference",
+      "blocks": {
+        "3df482a5-536e-496b-8b2f-cfcea8c9a63f": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/higher_profits.svg",
+            "card_heading": "Higher Profits",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "4c3a352e-b9a6-4208-b70e-be259ec5a2ab": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/robust_scaling.svg",
+            "card_heading": "Robust Scaling",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "d41fc302-6e9f-4ae8-870e-5c27212ee9b5": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/amazing_products.svg",
+            "card_heading": "Amazing Products",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus, per proin vitae et porttitor primis sollicitudin faucibus scelerisque."
+          }
+        }
+      },
+      "block_order": [
+        "3df482a5-536e-496b-8b2f-cfcea8c9a63f",
+        "4c3a352e-b9a6-4208-b70e-be259ec5a2ab",
+        "d41fc302-6e9f-4ae8-870e-5c27212ee9b5"
+      ],
+      "settings": {
+        "difference_h2": "We make your brand shine",
+        "difference_p": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -70,6 +160,8 @@
   },
   "order": [
     "image_banner",
+    "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
+    "3cdb93ad-ed31-4185-9705-e9a066117ea7",
     "featured_collection"
   ]
 }
