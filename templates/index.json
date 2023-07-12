@@ -136,7 +136,7 @@
           "type": "card",
           "settings": {
             "card_logo": "shopify:\/\/shop_images\/how_it_works_1.png",
-            "card_heading": "Upload Your Design",
+            "card_heading": "Upload Your <br> Design",
             "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
           }
         },
