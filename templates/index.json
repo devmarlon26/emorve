@@ -178,6 +178,54 @@
         "integrate_btn_url": "",
         "column_img": "shopify:\/\/shop_images\/ecommerce_platform.svg"
       }
+    },
+    "4e62a8f6-8589-4111-b4a4-648d24f7474d": {
+      "type": "testimonial",
+      "blocks": {
+        "973f7c74-b939-4098-ac71-67c98efe7306": {
+          "type": "Count",
+          "settings": {
+            "count": "964 K",
+            "count_title": "Orders Fulfilled"
+          }
+        },
+        "0602da00-af78-44ee-aac2-4c38590e1316": {
+          "type": "Count",
+          "settings": {
+            "count": "4,965",
+            "count_title": "Clients Served"
+          }
+        },
+        "9c14eeb2-7905-4417-8910-e10dc63814b0": {
+          "type": "Count",
+          "settings": {
+            "count": "6,235",
+            "count_title": "Store Authorized"
+          }
+        },
+        "6c7829f5-8e21-4c06-8d4c-3602909b6ea0": {
+          "type": "Testimonials",
+          "settings": {
+            "qoute": "shopify:\/\/shop_images\/Vector.png",
+            "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "profile": "shopify:\/\/shop_images\/Image_1.png",
+            "user": "Joel Sporer",
+            "job": "Owner of ABC Store",
+            "frame": "radial-gradient(rgba(210, 190, 255, 0), rgba(159, 168, 255, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "973f7c74-b939-4098-ac71-67c98efe7306",
+        "0602da00-af78-44ee-aac2-4c38590e1316",
+        "9c14eeb2-7905-4417-8910-e10dc63814b0",
+        "6c7829f5-8e21-4c06-8d4c-3602909b6ea0"
+      ],
+      "settings": {
+        "heading_title": "Trusted By Customers in the World",
+        "subheading": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum.",
+        "background_image": "shopify:\/\/shop_images\/Ellipse_35.svg"
+      }
     }
   },
   "order": [
@@ -185,6 +233,7 @@
     "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
     "3cdb93ad-ed31-4185-9705-e9a066117ea7",
     "32b1736b-3c50-458e-8fc7-b9ef1e05b2db",
-    "39656254-1e31-40e6-9dde-d2beab1ff711"
+    "39656254-1e31-40e6-9dde-d2beab1ff711",
+    "4e62a8f6-8589-4111-b4a4-648d24f7474d"
   ]
 }
