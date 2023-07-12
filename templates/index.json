@@ -166,12 +166,24 @@
         "how_it_works_h2": "How It Works",
         "how_it_works_p": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
       }
+    },
+    "39656254-1e31-40e6-9dde-d2beab1ff711": {
+      "type": "integrate",
+      "settings": {
+        "integrate_h2": "Integrate Your E-commerce Platforms",
+        "integrate_h3": "Connect Your Store",
+        "integrate_p": "Odio dui dictumst tortor ridiculus a condimentum auctor sed, varius etiam nostra molestie interdum arcu neque, enim tellus ullamcorper at lacus.",
+        "integrate_btn_text": "Connect It Now",
+        "integrate_btn_url": "",
+        "column_img": "shopify:\/\/shop_images\/ecommerce_platform.svg"
+      }
     }
   },
   "order": [
     "image_banner",
     "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
     "3cdb93ad-ed31-4185-9705-e9a066117ea7",
-    "32b1736b-3c50-458e-8fc7-b9ef1e05b2db"
+    "32b1736b-3c50-458e-8fc7-b9ef1e05b2db",
+    "39656254-1e31-40e6-9dde-d2beab1ff711"
   ]
 }
