@@ -213,13 +213,24 @@
             "job": "Owner of ABC Store",
             "frame": "radial-gradient(rgba(210, 190, 255, 0), rgba(159, 168, 255, 1) 100%)"
           }
+        },
+        "0cd92003-64f9-4499-958c-5a2892ae6237": {
+          "type": "Testimonials",
+          "settings": {
+            "qoute": "shopify:\/\/shop_images\/Vector.png",
+            "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "user": "Elsa Sanford",
+            "job": "Owner of ABC Store",
+            "frame": "radial-gradient(rgba(121, 185, 255, 1), rgba(159, 168, 255, 1) 100%)"
+          }
         }
       },
       "block_order": [
         "973f7c74-b939-4098-ac71-67c98efe7306",
         "0602da00-af78-44ee-aac2-4c38590e1316",
         "9c14eeb2-7905-4417-8910-e10dc63814b0",
-        "6c7829f5-8e21-4c06-8d4c-3602909b6ea0"
+        "6c7829f5-8e21-4c06-8d4c-3602909b6ea0",
+        "0cd92003-64f9-4499-958c-5a2892ae6237"
       ],
       "settings": {
         "heading_title": "Trusted By Customers in the World",
