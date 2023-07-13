@@ -9,6 +9,14 @@
   assign button_link_2 = section.settings.button_link_2 
 %}
 
+{% style %}
+  {% if background_image == blank %}
+    .cta__container.page-width-desktop {
+        background: #b4b4b4;
+    }
+  {% endif %}
+{% endstyle %}
+
 <section class="cta">
   <div class="cta__container page-width-desktop">
     {% if background_image != blank %}
@@ -16,6 +24,7 @@
     {% elsif section.settings.background_image == blank %}
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     {% endif %}
+    <div class="{% if background_image == blank %}cta__container-absolute{% endif %}">
       <div class="cta__heading-container">
         <h2 class="cta__heading-title">{{ heading_title }}</h2>
         <div class="cta__icon-curly">
@@ -42,6 +51,8 @@
         </div>
       </div>
     </div>
+  </div>
+
 </section>
 
 {% schema %}
