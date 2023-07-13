@@ -273,6 +273,90 @@
         "background_image": "shopify:\/\/shop_images\/testimonials_1.png"
       }
     },
+    "e0960579-6666-4f33-949d-82ac3b8c6cea": {
+      "type": "pricing",
+      "blocks": {
+        "225c7943-65e9-41da-b932-382b2c6aee4b": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/visa.svg"
+          }
+        },
+        "8d77df61-a413-4a0f-8116-bc84a3b1381e": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/GooglePay.png"
+          }
+        },
+        "6248ef15-ea8f-473a-b794-d1bce327ad58": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/Mastercard.png"
+          }
+        },
+        "e7eb9e5c-3e6b-4bba-9390-4454942253d2": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/ApplePay.png"
+          }
+        },
+        "eb256f76-394c-4a6d-a35c-cfd1098487cf": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/Stripe.png"
+          }
+        },
+        "2064389b-bd8e-42b8-b520-110d14329cc5": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/PayPal.png"
+          }
+        },
+        "dabdbd1f-314d-4d5f-90c8-99395d9b3c6e": {
+          "type": "List",
+          "settings": {
+            "description": "350 credits per month"
+          }
+        },
+        "a3a6e401-9469-4156-8fa7-5f5cb63b46b4": {
+          "type": "List",
+          "settings": {
+            "description": "Credits can be used to create a print on demand product and get it listed on their ecommerce store of choice (1 credit for 1 listing)"
+          }
+        },
+        "7cfda918-a93e-4082-aa75-ed9699562a82": {
+          "type": "List",
+          "settings": {
+            "description": "Once an order is received, we will print and ship the product directly to the customer with  their branding"
+          }
+        },
+        "9dcaf56a-20fb-4a23-b4e9-1ac75579d634": {
+          "type": "List",
+          "settings": {
+            "description": "Credits can be used to get title and tags re-written for the product with least views\/sales (1 credit for 1 rewriting)"
+          }
+        }
+      },
+      "block_order": [
+        "225c7943-65e9-41da-b932-382b2c6aee4b",
+        "8d77df61-a413-4a0f-8116-bc84a3b1381e",
+        "6248ef15-ea8f-473a-b794-d1bce327ad58",
+        "e7eb9e5c-3e6b-4bba-9390-4454942253d2",
+        "eb256f76-394c-4a6d-a35c-cfd1098487cf",
+        "2064389b-bd8e-42b8-b520-110d14329cc5",
+        "dabdbd1f-314d-4d5f-90c8-99395d9b3c6e",
+        "a3a6e401-9469-4156-8fa7-5f5cb63b46b4",
+        "7cfda918-a93e-4082-aa75-ed9699562a82",
+        "9dcaf56a-20fb-4a23-b4e9-1ac75579d634"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Frame_7.png",
+        "heading_title": "Emorve helps merchants make more money with less effort",
+        "btn_label": "Get Started Now",
+        "button_link": "",
+        "subheading": "There would be a $99 per month subscription, which will get them:"
+      }
+    },
     "d98eb341-e148-4410-8e34-f6744d5ba03c": {
       "type": "cta",
       "settings": {
@@ -293,6 +377,7 @@
     "32b1736b-3c50-458e-8fc7-b9ef1e05b2db",
     "39656254-1e31-40e6-9dde-d2beab1ff711",
     "4e62a8f6-8589-4111-b4a4-648d24f7474d",
+    "e0960579-6666-4f33-949d-82ac3b8c6cea",
     "d98eb341-e148-4410-8e34-f6744d5ba03c"
   ]
 }
