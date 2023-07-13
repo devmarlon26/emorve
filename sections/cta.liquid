@@ -1,0 +1,94 @@
+{{ 'cta.css' | asset_url | stylesheet_tag }}
+
+{%liquid
+  assign background_image = section.settings.background_image 
+  assign heading_title = section.settings.heading_title 
+  assign button_label = section.settings.button_label 
+  assign button_link = section.settings.button_link
+  assign button_label_2 = section.settings.button_label_2 
+  assign button_link_2 = section.settings.button_link_2 
+%}
+
+<section class="cta">
+  <div class="cta__container page-width-desktop">
+    {% if background_image != blank %}
+      <img class="cta__banner-img" loading="lazy" width="{{ block.settings.background_image.width }}"   height="{{ block.settings.background_image.height }}" src="{{ background_image | img_url: 'master' }}">
+    {% elsif section.settings.background_image == blank %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+      <div class="cta__heading-container">
+        <h2 class="cta__heading-title">{{ heading_title }}</h2>
+        <div class="cta__icon-curly">
+          {% render 'curly-arrow' %}
+        </div>
+      </div>
+      <div class="cta__btn-container">
+        <div class="cta__btn">
+          {% if button_label != blank %}
+            <a href="{{ button_link }}" class="cta__button custom_button button--solid">
+              {{ button_label }}
+            </a>
+          {% endif %}
+        </div>
+        <div class="cta__btn">
+          {% if button_label_2 != blank %}
+            <a href="{{ button_link_2 }}" class="cta__button custom_button button--line">
+              {{ button_label_2 }}
+            </a>
+          {% endif %}
+        </div>
+        <div class="cta__icon-quote">
+          {% render 'three-quote' %}
+        </div>
+      </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA",
+  "class": "section-header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "heading_title",
+      "label": "Heading",
+      "default": "Lorem ipsum"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button",
+      "default": "Lorem ipsum"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+    ,
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Button 2",
+      "default": "Lorem ipsum"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Button Link 2"
+    }
+  ],
+  "presets": [
+    {
+        "name": "CTA",
+        "category": "CTA"
+    }
+  ]
+}
+{% endschema %}

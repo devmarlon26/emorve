@@ -1,0 +1,143 @@
+.cta {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    position: relative;
+}
+
+.cta__banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cta__container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.cta__btn-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.cta__heading-title {
+    width: 618px;
+    margin: auto;
+    color: #ECECFA;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 58px; /* 120.833% */
+    letter-spacing: -0.96px;
+}
+
+.button--line {
+    border: 1px solid #FFF;
+}
+
+.cta__heading-container {
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 60px;
+}
+
+.cta__icon-curly {
+    position: absolute;
+    top: -3rem;
+    left: -18.2rem;
+}
+
+.cta__icon-quote {
+    position: absolute;
+    right: -7rem;
+    top: -2rem;
+}
+
+@media (max-width: 768px) { 
+    .cta__icon-curly {
+        position: absolute;
+        top: -1rem;
+        left: -10.2rem;
+    }
+
+    .cta__heading-container {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .cta__heading-title {
+        width: 100%;
+    }
+
+    .cta__icon-curly {
+        transform: scaleY(-1) rotate(341deg);
+        position: absolute;
+        top: -20rem;
+        left: 2.8rem;
+    }
+
+    .cta__heading-container {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 680px) { 
+    .cta__icon-quote {
+        right: -3rem;
+        top: -4rem;
+    }
+
+    .cta__heading-container {
+        margin-top: 10rem;
+    }
+
+    .cta__icon-curly {
+        top: -20rem;
+    }
+}
+
+@media (max-width: 425px) { 
+    .cta__heading-title {
+        font-size: 38px;
+    }
+    
+    .cta {
+        padding-bottom: 75px;
+    }
+}
+
+@media (max-width: 375px) { 
+    .cta__icon-quote {
+        right: 0rem;
+    }
+
+    .cta__button {
+        font-size: 12px;
+    }
+
+    .cta__btn-container {
+        flex-direction: column;
+    }
+    
+    .cta__btn {
+        width: 100%;
+    }
+    
+    .cta__btn-container {
+        width: 80%;
+    }
+}
+
