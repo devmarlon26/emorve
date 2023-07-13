@@ -1,0 +1,69 @@
+{{ 'easily.css' | asset_url | stylesheet_tag }}
+
+<section id="easily">
+    <div class="easily page-width-desktop">
+        <img class='easily-pink-lines' src="https://cdn.shopify.com/s/files/1/0788/3361/5144/files/pink_lines.svg?v=1689172872" alt="easily pink lines">
+        <img class='easily-cards-logo' src="https://cdn.shopify.com/s/files/1/0788/3361/5144/files/cards_logo.svg?v=1689172872" alt="easily cards logo">
+        <img class='easily-tools-icon' src="https://cdn.shopify.com/s/files/1/0788/3361/5144/files/tools_icons.svg?v=1689172872" alt="easily tools icon">
+        <img class='easily-green-splash' src="https://cdn.shopify.com/s/files/1/0788/3361/5144/files/green_splash.svg?v=1689172872" alt="easily green splash">
+        <div class="easily-two-col">
+            <div class="easily-col-1">
+                {% if section.settings.column_img != blank %}
+                    <img class='easily-img' src="{{ section.settings.column_img | img_url : 'master' }}" alt="Main Image">
+                {% endif %}
+            </div>
+            <div class="easily-col-2">
+                <div class="easily-heading"><h2>{{ section.settings.easily_h2 }}</h2></div>
+                <p class='easily-p'>{{ section.settings.easily_p }}</p>
+                <a href="{{ section.settings.easily_btn_url }}" class="custom_button button--solid">
+                    <span>
+                        {{ section.settings.easily_btn_text }}
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Easily",
+    "class": "section",
+    "settings": [
+        {
+        "type": "text",
+        "label": "Section Heading",
+        "id": "easily_h2",
+        "default": "Easily add your design to a wide range of products"
+        },
+        {
+          "type": "image_picker",
+          "label": "Column Image",
+          "id": "column_img"
+        },
+        {
+        "type": "text",
+        "label": "Paragraph",
+        "id": "easily_p",
+        "default": "Odio dui dictumst tortor ridiculus a condimentum auctor sed, varius etiam nostra molestie interdum arcu neque, enim tellus ullamcorper at lacus."
+        },
+        {
+        "type": "text",
+        "label": "Button Text",
+        "id": "easily_btn_text",
+        "default": "Start Selling"
+        },
+        {
+        "type": "text",
+        "label": "Button URL",
+        "id": "easily_btn_url"
+        }
+    ],
+    "presets": [
+        {
+        "name": "Easily",
+        "category": "Standard"
+        }
+    ]
+}
+{% endschema %}

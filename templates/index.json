@@ -1,75 +1,375 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "d16e2f3a-2bec-4051-b196-0a7df83cf6e3": {
+      "type": "hero-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "bf34ee95-1fe8-4f00-b811-767e84886109": {
+          "type": "Banner",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "banner_img": "shopify:\/\/shop_images\/Group_1000001655.png"
           }
         },
-        "button": {
-          "type": "buttons",
+        "992436ae-38e2-4f52-958c-4bb14cd8661a": {
+          "type": "Banner",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "banner_img": "shopify:\/\/shop_images\/Group_5.png"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "bf34ee95-1fe8-4f00-b811-767e84886109",
+        "992436ae-38e2-4f52-958c-4bb14cd8661a"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "background_image": "shopify:\/\/shop_images\/Group_1000001655_2.png",
+        "heading_title": "Create and sell customized products",
+        "sub_heading": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed, eu phasellus cum volutpat vehicula cursus feugiat parturient tempor.",
+        "button_label": "Start for Free",
+        "button_link": "",
+        "button_label_2": "How it Works",
+        "button_link_2": "",
+        "card_image": "shopify:\/\/shop_images\/hot_products.png"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e": {
+      "type": "company-logo",
+      "blocks": {
+        "3c3bffe8-9dcf-4960-b349-6e6f10f57c88": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/06ee98edfed241ad77a2bd6148411110.svg"
+          }
+        },
+        "f1d764f1-9632-45eb-8fdb-5eec5809a9c9": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Asana.png"
+          }
+        },
+        "ca2f335e-80bc-4767-8584-9c3b351f0ee5": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Group_9.svg"
+          }
+        },
+        "063f17fa-4f8c-4777-b5d4-f38dc6a1f898": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Buzzfeed.svg"
+          }
+        },
+        "fd4f5059-5148-4742-8a85-36db3eba59de": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Mask_Group.png"
+          }
+        },
+        "b374c1b6-85f1-446a-ba72-7f6616bc8400": {
+          "type": "Logo",
+          "settings": {
+            "company_logo": "shopify:\/\/shop_images\/Walmart.png"
+          }
+        }
+      },
+      "block_order": [
+        "3c3bffe8-9dcf-4960-b349-6e6f10f57c88",
+        "f1d764f1-9632-45eb-8fdb-5eec5809a9c9",
+        "ca2f335e-80bc-4767-8584-9c3b351f0ee5",
+        "063f17fa-4f8c-4777-b5d4-f38dc6a1f898",
+        "fd4f5059-5148-4742-8a85-36db3eba59de",
+        "b374c1b6-85f1-446a-ba72-7f6616bc8400"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "heading_title": "We help businesses all around the world to grow"
+      }
+    },
+    "3cdb93ad-ed31-4185-9705-e9a066117ea7": {
+      "type": "difference",
+      "blocks": {
+        "3df482a5-536e-496b-8b2f-cfcea8c9a63f": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/higher_profits.svg",
+            "card_heading": "Higher Profits",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "4c3a352e-b9a6-4208-b70e-be259ec5a2ab": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/robust_scaling.svg",
+            "card_heading": "Robust Scaling",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "d41fc302-6e9f-4ae8-870e-5c27212ee9b5": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/amazing_products.svg",
+            "card_heading": "Amazing Products",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus, per proin vitae et porttitor primis sollicitudin faucibus scelerisque."
+          }
+        }
+      },
+      "block_order": [
+        "3df482a5-536e-496b-8b2f-cfcea8c9a63f",
+        "4c3a352e-b9a6-4208-b70e-be259ec5a2ab",
+        "d41fc302-6e9f-4ae8-870e-5c27212ee9b5"
+      ],
+      "settings": {
+        "difference_h2": "We make your brand shine",
+        "difference_p": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
+      }
+    },
+    "90eddfb8-4391-4627-a3a5-fe94fc8b4514": {
+      "type": "easily",
+      "settings": {
+        "easily_h2": "Easily add your design to a wide range of products",
+        "column_img": "shopify:\/\/shop_images\/easily_img.png",
+        "easily_p": "Odio dui dictumst tortor ridiculus a condimentum auctor sed, varius etiam nostra molestie interdum arcu neque, enim tellus ullamcorper at lacus.",
+        "easily_btn_text": "Start Selling",
+        "easily_btn_url": ""
+      }
+    },
+    "32b1736b-3c50-458e-8fc7-b9ef1e05b2db": {
+      "type": "how-it-works",
+      "blocks": {
+        "e424d6e7-ba90-4b69-9efe-db7549506989": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/how_it_works_1.png",
+            "card_heading": "Upload Your <br> Design",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "a52c80c2-cd39-4e50-a40f-94bff4c68cfb": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/how_it_works_2.png",
+            "card_heading": "We Put it on Beautiful Mockups",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        },
+        "5e1473d1-4b2d-499a-bbc4-bd0ff2c7493c": {
+          "type": "card",
+          "settings": {
+            "card_logo": "shopify:\/\/shop_images\/how_it_works_3.svg",
+            "card_heading": "List the Products on Your Platform",
+            "card_paragraph": "Vulputate ultrices maecenas tempus vehicula nostra dapibus per proin vitae et porttitor primis, sollicitudin faucibus scelerisque."
+          }
+        }
+      },
+      "block_order": [
+        "e424d6e7-ba90-4b69-9efe-db7549506989",
+        "a52c80c2-cd39-4e50-a40f-94bff4c68cfb",
+        "5e1473d1-4b2d-499a-bbc4-bd0ff2c7493c"
+      ],
+      "settings": {
+        "how_it_works_h2": "How It Works",
+        "how_it_works_p": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
+      }
+    },
+    "39656254-1e31-40e6-9dde-d2beab1ff711": {
+      "type": "integrate",
+      "settings": {
+        "integrate_h2": "Integrate Your E-commerce Platforms",
+        "column_icon": "shopify:\/\/shop_images\/link_icon_b5103873-8f06-4539-8827-84f59d19ceb9.svg",
+        "integrate_h3": "Connect Your Store",
+        "integrate_p": "Odio dui dictumst tortor ridiculus a condimentum auctor sed, varius etiam nostra molestie interdum arcu neque, enim tellus ullamcorper at lacus.",
+        "integrate_btn_text": "Connect It Now",
+        "integrate_btn_url": "",
+        "column_img": "shopify:\/\/shop_images\/ecommerce_platform.svg"
+      }
+    },
+    "4e62a8f6-8589-4111-b4a4-648d24f7474d": {
+      "type": "testimonial",
+      "blocks": {
+        "973f7c74-b939-4098-ac71-67c98efe7306": {
+          "type": "Count",
+          "settings": {
+            "count": "964 K",
+            "count_title": "Orders Fulfilled"
+          }
+        },
+        "0602da00-af78-44ee-aac2-4c38590e1316": {
+          "type": "Count",
+          "settings": {
+            "count": "4,965",
+            "count_title": "Clients Served"
+          }
+        },
+        "9c14eeb2-7905-4417-8910-e10dc63814b0": {
+          "type": "Count",
+          "settings": {
+            "count": "6,235",
+            "count_title": "Store Authorized"
+          }
+        },
+        "6c7829f5-8e21-4c06-8d4c-3602909b6ea0": {
+          "type": "Testimonials",
+          "settings": {
+            "qoute": "shopify:\/\/shop_images\/Vector.png",
+            "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "profile": "shopify:\/\/shop_images\/Image_1.png",
+            "user": "Joel Sporer",
+            "job": "Owner of ABC Store",
+            "frame": "linear-gradient(139deg, #E9DFFF 0%, #D2BEFF 100%)"
+          }
+        },
+        "0cd92003-64f9-4499-958c-5a2892ae6237": {
+          "type": "Testimonials",
+          "settings": {
+            "qoute": "shopify:\/\/shop_images\/Vector.png",
+            "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "profile": "shopify:\/\/shop_images\/Image_2.png",
+            "user": "Elsa Sanford",
+            "job": "Owner of ABC Store",
+            "frame": "linear-gradient(139deg, #ABD3FF 0%, #79B9FF 100%)"
+          }
+        },
+        "c4c10272-0cbf-4a84-aff6-7eea0d368fcd": {
+          "type": "Testimonials",
+          "settings": {
+            "qoute": "shopify:\/\/shop_images\/Vector.png",
+            "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "profile": "shopify:\/\/shop_images\/Image_3.png",
+            "user": "Lois Feil",
+            "job": "Owner of ABC Store",
+            "frame": "linear-gradient(139deg, #C2C8FF 0%, #9FA8FF 100%)"
+          }
+        },
+        "471dcd48-b226-45d4-81cf-a59cd60ca103": {
+          "type": "Testimonials",
+          "settings": {
+            "qoute": "shopify:\/\/shop_images\/Vector.png",
+            "description": "Tincidunt nisl pellentesque augue integer tempor odio quis susse, per sociis himenaeos consequat id porttitor ultrices viverra nibh nostra semper felis facilisi habint semper purus tristique felis port vestibulum turpis netus egestas.",
+            "profile": "shopify:\/\/shop_images\/Image_1.png",
+            "user": "Joel Sporer",
+            "job": "Owner of ABC Store",
+            "frame": "linear-gradient(139deg, #E9DFFF 0%, #D2BEFF 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "973f7c74-b939-4098-ac71-67c98efe7306",
+        "0602da00-af78-44ee-aac2-4c38590e1316",
+        "9c14eeb2-7905-4417-8910-e10dc63814b0",
+        "6c7829f5-8e21-4c06-8d4c-3602909b6ea0",
+        "0cd92003-64f9-4499-958c-5a2892ae6237",
+        "c4c10272-0cbf-4a84-aff6-7eea0d368fcd",
+        "471dcd48-b226-45d4-81cf-a59cd60ca103"
+      ],
+      "settings": {
+        "heading_title": "Trusted By Customers in the World",
+        "subheading": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum.",
+        "background_image": "shopify:\/\/shop_images\/testimonials_1.png"
+      }
+    },
+    "e0960579-6666-4f33-949d-82ac3b8c6cea": {
+      "type": "pricing",
+      "blocks": {
+        "225c7943-65e9-41da-b932-382b2c6aee4b": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/visa.svg"
+          }
+        },
+        "8d77df61-a413-4a0f-8116-bc84a3b1381e": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/GooglePay.png"
+          }
+        },
+        "6248ef15-ea8f-473a-b794-d1bce327ad58": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/Mastercard.png"
+          }
+        },
+        "e7eb9e5c-3e6b-4bba-9390-4454942253d2": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/ApplePay.png"
+          }
+        },
+        "eb256f76-394c-4a6d-a35c-cfd1098487cf": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/Stripe.png"
+          }
+        },
+        "2064389b-bd8e-42b8-b520-110d14329cc5": {
+          "type": "Payment",
+          "settings": {
+            "payment": "shopify:\/\/shop_images\/PayPal.png"
+          }
+        },
+        "dabdbd1f-314d-4d5f-90c8-99395d9b3c6e": {
+          "type": "List",
+          "settings": {
+            "description": "350 credits per month"
+          }
+        },
+        "a3a6e401-9469-4156-8fa7-5f5cb63b46b4": {
+          "type": "List",
+          "settings": {
+            "description": "Credits can be used to create a print on demand product and get it listed on their ecommerce store of choice (1 credit for 1 listing)"
+          }
+        },
+        "7cfda918-a93e-4082-aa75-ed9699562a82": {
+          "type": "List",
+          "settings": {
+            "description": "Once an order is received, we will print and ship the product directly to the customer with  their branding"
+          }
+        },
+        "9dcaf56a-20fb-4a23-b4e9-1ac75579d634": {
+          "type": "List",
+          "settings": {
+            "description": "Credits can be used to get title and tags re-written for the product with least views\/sales (1 credit for 1 rewriting)"
+          }
+        }
+      },
+      "block_order": [
+        "225c7943-65e9-41da-b932-382b2c6aee4b",
+        "8d77df61-a413-4a0f-8116-bc84a3b1381e",
+        "6248ef15-ea8f-473a-b794-d1bce327ad58",
+        "e7eb9e5c-3e6b-4bba-9390-4454942253d2",
+        "eb256f76-394c-4a6d-a35c-cfd1098487cf",
+        "2064389b-bd8e-42b8-b520-110d14329cc5",
+        "dabdbd1f-314d-4d5f-90c8-99395d9b3c6e",
+        "a3a6e401-9469-4156-8fa7-5f5cb63b46b4",
+        "7cfda918-a93e-4082-aa75-ed9699562a82",
+        "9dcaf56a-20fb-4a23-b4e9-1ac75579d634"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Frame_7.png",
+        "heading_title": "Emorve helps merchants make more money with less effort",
+        "btn_label": "Get Started Now",
+        "button_link": "",
+        "subheading": "There would be a <span class=\"pricing__price\">$99<\/span> per month subscription, which will get them:"
+      }
+    },
+    "d98eb341-e148-4410-8e34-f6744d5ba03c": {
+      "type": "cta",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/cta.png",
+        "heading_title": "Start making more sales on your store now!",
+        "button_label": "Start for Free",
+        "button_link": "",
+        "button_label_2": "Contact Us",
+        "button_link_2": ""
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "d16e2f3a-2bec-4051-b196-0a7df83cf6e3",
+    "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
+    "3cdb93ad-ed31-4185-9705-e9a066117ea7",
+    "90eddfb8-4391-4627-a3a5-fe94fc8b4514",
+    "32b1736b-3c50-458e-8fc7-b9ef1e05b2db",
+    "39656254-1e31-40e6-9dde-d2beab1ff711",
+    "4e62a8f6-8589-4111-b4a4-648d24f7474d",
+    "e0960579-6666-4f33-949d-82ac3b8c6cea",
+    "d98eb341-e148-4410-8e34-f6744d5ba03c"
   ]
 }

@@ -33,27 +33,44 @@
             "heading": "Legal",
             "menu": "legal"
           }
+        },
+        "3e8329ed-2ebf-4541-9f29-a693ae7305e4": {
+          "type": "social_icons",
+          "settings": {
+            "heading": "Follow Us",
+            "facebook": "#",
+            "instagram": "#",
+            "twitter": "#",
+            "youtube": "#"
+          }
         }
       },
       "block_order": [
         "907978ee-524c-4375-b063-2d2410201667",
         "1b116fdf-13c9-4b10-bf15-f7a76938b342",
         "87a1ea37-0944-4971-89be-4614abcdd881",
-        "650c4797-6951-4994-9e30-2605ba0dcacd"
+        "650c4797-6951-4994-9e30-2605ba0dcacd",
+        "3e8329ed-2ebf-4541-9f29-a693ae7305e4"
       ],
       "settings": {
         "color_scheme": "background-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
+        "visa": true,
+        "gpay": true,
+        "mastercard": true,
+        "apple": true,
+        "stripe": true,
+        "paypal": true,
         "show_policy": false,
-        "margin_top": 36,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "margin_top": 0,
+        "padding_top": 110,
+        "padding_bottom": 50
       }
     }
   },

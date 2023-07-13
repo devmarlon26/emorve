@@ -1,0 +1,162 @@
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+
+{%liquid
+    assign background_image = section.settings.background_image 
+    assign heading_title = section.settings.heading_title
+    assign subheading = section.settings.subheading
+%}
+
+{% style %}
+.testimonial--background {
+    background-image: url("{{ background_image | img_url: 'master' }}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 61px;
+    padding-bottom: 61px;
+}
+{% endstyle %}
+
+<section class="testimonial">
+    <div class="testimonial__container page-width-desktop">
+        <div class="testimonial__heading-container">
+            <h2 class="testimonial__heading">{{ heading_title }}</h2>
+            <p class="testimonial__subheading">{{ subheading }}</p>
+        </div>
+    </div>
+    <div class="testimonial__container testimonial--background page-width-desktop">   
+        <div class="testimonial__count-container">
+            {% for block in section.blocks %}
+                {% if block.type == 'Count' %}
+                    <div class="testimonial__column">
+                        <h1 class="testimonial__count">{{ block.settings.count }}</h1>
+                        <h3 class="testimonial__count-title">{{ block.settings.count_title }}</h3>
+                    </div>
+                {% endif %}
+              
+                {% assign countBlocks = section.blocks | where: 'type', 'Count' %}
+                {% assign countBlockCount = countBlocks | size %}
+                {% if countBlockCount >= block.limit %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+        </div>
+        
+        <div class="testimonial__slider-container">
+            {% for block in section.blocks %}
+                {% if block.type == 'Testimonials' %}
+                <div class="testimonial__frame" style="background: {{ block.settings.frame }};">
+                    <div class="testimonial__card">
+                        <div class="testimonial__quote-img">
+                            <img class="testimonial__qoutation" loading="lazy" width="{{ block.settings.qoute.width }}"   height="{{ block.settings.qoute.height }}" src="{{ block.settings.qoute | img_url: 'master' }}" alt="quotation">
+                        </div>
+                        <div class="testimonial__description">
+                            {{ block.settings.description }}
+                        </div>
+                        <div class="testimonial__user">
+                            <div class="testimonial__user-image">
+                                <img class="testimonial__image" loading="lazy" width="{{ block.settings.profile.width }}"   height="{{ block.settings.profile.height }}" src="{{ block.settings.profile | img_url: 'master' }}" alt="quotation">
+                            </div>
+                            <div class="testimonial__user-details">
+                                <h5 class="testimonial__user-name">{{ block.settings.user }}</h5>
+                                <p class="testimonial__user-job">{{ block.settings.job }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "class": "section-header",
+  "settings": [
+        {
+            "type": "text",
+            "id": "heading_title",
+            "label": "Heading",
+            "default": "Lorem ipsum"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Sub heading",
+            "default": "Lorem ipsum"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background image"
+        }
+  ],
+  "blocks": [
+    {
+        "type": "Count",
+        "name": "Count",
+        "limit": 3 ,
+        "settings": [
+            {
+                "type": "text",
+                "id": "count",
+                "label": "Number of count",
+                "default": "000"
+            },
+            {
+                "type": "text",
+                "id": "count_title",
+                "label": "Count title",
+                "default": "Lorem ipsum"
+            }
+        ]
+    } ,
+    {
+        "type": "Testimonials",
+        "name": "Testimonial",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "qoute",
+                "label": "Image"
+            },
+            {
+                "type": "textarea",
+                "id": "description",
+                "label": "Description",
+                "default": "Lorem ipsum"
+            }, 
+            {
+                "type": "image_picker",
+                "id": "profile",
+                "label": "Profile image" 
+            },
+            {
+                "type": "text",
+                "id": "user",
+                "label": "User name"
+            },
+            {
+                "type": "text",
+                "id": "job",
+                "label": "Position"
+            },
+            {
+                "type": "color_background",
+                "id": "frame",
+                "label": "Border color",
+                "default": "linear-gradient(#C2C8FF 0%, #9FA8FF 100%)"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Testimonial",
+        "category": "Company logo"
+    }
+  ]
+}
+{% endschema %}

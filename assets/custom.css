@@ -1,11 +1,4 @@
 .custom_button {
-    display: flex;
-    padding: 16px 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
     border-radius: 8px;
     color: #FFF;
     font-family: Plus Jakarta Sans;
@@ -14,8 +7,38 @@
     font-weight: 700;
     line-height: 24px;
     text-decoration: none;
+
+    display: inline-flex;
+    height: 48px;
+    padding: 16px 32px 16px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    transition: .1s all ease-in-out;
 }
+
+.custom_button:hover {
+    padding: 5px 37px 16px 27px;
+} 
 
 .button--solid {
     background: var(--gradient-blue, linear-gradient(138deg, #0289FF 0%, #0258FF 100%));
+}
+
+.button--solid:hover {
+    background: var(--gradient-blue, linear-gradient(138deg, #0258FF 0%, #0289FF 100%));
+}
+
+.account_login {
+    color: #18181B;
+    text-align: right;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
 }

@@ -1,0 +1,134 @@
+#integrate {
+    background-image: url('https://cdn.shopify.com/s/files/1/0788/3361/5144/files/integrate_bg.svg?v=1689159691');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.integrate {
+    margin: 0 auto;
+}
+
+.integrate-container  {
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.integrate-heading h2 {
+    position: relative;
+}
+
+.integrate-heading h2::before {
+    content: '';
+    background: url('https://cdn.shopify.com/s/files/1/0788/3361/5144/files/Arrow_swirl.svg?v=1689159278');
+    background-repeat: no-repeat;
+    width: 225px;
+    height: 190px;
+    position: absolute;
+    right: -200px;
+    top: -70px;
+}
+
+.integrate-heading h2 {
+    margin: unset;
+    color: #ECECFA;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: -0.96px;
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.integrate-p {
+    text-align: left;
+    max-width: 480px;
+}
+
+.integrate-p{
+    margin: unset;
+    color: #E9E6EF;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+.integrate-card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrate-two-col {
+    display: flex;
+}
+
+.integrate-col-1 {
+    flex-basis: 35%;
+}
+
+.integrate-col-2 {
+    flex-basis: 65%;
+}
+
+.integrate-icon {
+    margin-bottom: 30px;
+}
+
+.integrate-img {
+    max-width: 100%;
+}
+
+.integrate-h3 {
+    margin: unset;
+    color: #ECECFA;
+    margin-bottom: 20px;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 42px;
+    letter-spacing: -0.64px;
+}
+
+@media (min-width: 900px) and (max-width: 1040px) {
+    .integrate-heading h2::before {
+        right: -150px;
+    }
+}
+
+@media (max-width: 900px) {
+    #integrate {
+        padding: 50px 30px;
+    }
+
+    .integrate-heading h2::before {
+        display: none;
+    }
+
+    .integrate-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .integrate-heading {
+        margin-bottom: 25px;
+    }
+
+    .integrate-two-col {
+        flex-direction: column-reverse;
+    }
+
+    .integrate-col-1 {
+        padding: 0 0 0 18px;
+    }
+}

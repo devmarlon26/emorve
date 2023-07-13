@@ -1,0 +1,244 @@
+.hero-banner {
+    padding-top: 52px;
+    padding-bottom: 98.26px;
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.hero-banner__banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-banner__heading-container {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+.hero-banner__container-absolute{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hero-banner__container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-banner__container-absolute {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hero-banner__heading-title{
+    color: #140626;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 82px;
+    letter-spacing: -1.44px;
+    width: 795px;
+    margin: 0 0 27px auto;
+}
+
+.hero-banner__subheading {
+    color: #5C5665;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+    width: 685px;
+    margin: 0 auto 49px auto;
+}
+
+.hero-banner__icon-curly {
+    position: absolute;
+    right: -15rem;
+    bottom: 7rem;
+    height: fit-content;
+}
+
+.hero-banner__btn-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.hero-banner--line {
+    border: 1px solid #140626;
+    color: #140626;
+}
+
+.hero-banner__image-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+svg.card-image {
+    width: 347px;
+    height: 209px;
+}
+
+.hero-banner__card-image {
+    position: relative;
+}
+
+.hero-banner__card-container {
+    position: absolute;
+    top: -50%;
+    left: 48%;
+    transform: translate(-44%,-50%);
+}
+
+.hero-banner__image-container .hero-banner__img{
+    aspect-ratio: auto 390 / 329 !important;
+    width: 390px;
+    height: 329px;
+}
+
+@media (max-width: 1384px) {
+    .hero-banner__card-container {
+        transform: translate(-44%,-15%);
+    }
+
+    .hero-banner__image-container {
+        justify-content: center;
+    }
+
+    .hero-banner__img {
+        width: 474px;
+        aspect-ratio: auto 474 / 400;
+        height: 400px;
+    }
+
+    .hero-banner {
+        padding-bottom: 19rem;
+    }
+    
+    .hero-banner__icon-curly {
+        right: -15rem;
+        bottom: 7rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-banner__heading-title {
+        width: 90%;
+        margin: 0 auto 27px auto;
+        font-size: 50px;
+    }
+
+    .hero-banner__subheading{
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto 39px auto;
+    }
+
+    .hero-banner__icon-curly {
+        right: 6rem;
+        top: 9rem;
+        transform: scaleY(-1) rotate(313deg);
+    }
+}
+@media (max-width: 1000px) {
+    .hero-banner__icon-curly {
+        top: 0rem;
+        transform: scaleY(-1) rotate(313deg);
+    }
+
+    .hero-banner__heading-title {
+        line-height:65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner__heading-title {
+        width: 72%;
+    }
+
+    .hero-banner__icon-curly {
+        top: 0rem;
+        transform: scaleY(1) rotate(313deg);
+    }
+}
+@media (max-width: 750px) {
+    .hero-banner__image-container {
+        flex-direction: column;
+    }
+
+    .hero-banner__btn-container {
+        margin: 0 auto 39px auto;
+    }
+
+    .hero-banner__card-container {
+        left: 44%;
+    }
+
+    .hero-banner__img {
+        width: 390px;
+        aspect-ratio: auto 390 / 320;
+        height: 320px;
+    }
+}
+
+@media (max-width: 425px) { 
+    .hero-banner__heading-title {
+        width: 80%;
+        line-height: 33px;
+        font-size: 26px;
+    }
+
+    .hero-banner {
+        padding-top: 120px;
+    }
+
+    .hero-banner__icon-curly {
+        top: -12rem;
+        right: 8rem;
+    }
+
+    .hero-banner__btn-container {
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .hero-banner__btn {
+        width: 100%;
+    }
+    
+    .hero-banner__image-container .hero-banner__img {
+        aspect-ratio: auto 300 / 300!important;
+        width: 300px;
+        height: 240px;
+    }
+
+    .hero-banner__img {
+        width: 300px;
+        aspect-ratio: auto 300 / 280;
+        height: 240px;
+    }
+
+    .hero-banner__card-container {
+        transform: translate(-44%,-2%);
+    }
+}
