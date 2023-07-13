@@ -93,6 +93,7 @@
     },
     "3cdb93ad-ed31-4185-9705-e9a066117ea7": {
       "type": "difference",
+      "disabled": true,
       "blocks": {
         "3df482a5-536e-496b-8b2f-cfcea8c9a63f": {
           "type": "card",
@@ -179,7 +180,6 @@
     },
     "39656254-1e31-40e6-9dde-d2beab1ff711": {
       "type": "integrate",
-      "disabled": true,
       "settings": {
         "integrate_h2": "Integrate Your E-commerce Platforms",
         "column_icon": "shopify:\/\/shop_images\/link_icon_b5103873-8f06-4539-8827-84f59d19ceb9.svg",
