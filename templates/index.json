@@ -354,7 +354,7 @@
         "heading_title": "Emorve helps merchants make more money with less effort",
         "btn_label": "Get Started Now",
         "button_link": "",
-        "subheading": "There would be a $99 per month subscription, which will get them:"
+        "subheading": "There would be a <span class=\"pricing__price\">$99<\/span> per month subscription, which will get them:"
       }
     },
     "d98eb341-e148-4410-8e34-f6744d5ba03c": {
