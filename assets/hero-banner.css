@@ -70,6 +70,7 @@
     position: absolute;
     right: -15rem;
     bottom: 7rem;
+    height: fit-content;
 }
 
 .hero-banner__btn-container{
@@ -155,7 +156,7 @@ svg.card-image {
 
     .hero-banner__icon-curly {
         right: 6rem;
-        top: 0rem;
+        top: 9rem;
         transform: scaleY(-1) rotate(313deg);
     }
 }
@@ -213,7 +214,7 @@ svg.card-image {
 
     .hero-banner__icon-curly {
         top: -12rem;
-        right: 0rem;
+        right: 8rem;
     }
 
     .hero-banner__btn-container {
@@ -223,5 +224,21 @@ svg.card-image {
     
     .hero-banner__btn {
         width: 100%;
+    }
+    
+    .hero-banner__image-container .hero-banner__img {
+        aspect-ratio: auto 300 / 300!important;
+        width: 300px;
+        height: 240px;
+    }
+
+    .hero-banner__img {
+        width: 300px;
+        aspect-ratio: auto 300 / 280;
+        height: 240px;
+    }
+
+    .hero-banner__card-container {
+        transform: translate(-44%,-2%);
     }
 }
