@@ -1,6 +1,9 @@
+.company {
+    padding: 80px 0 80px;
+}
+
 .company__header {
     text-align: center;
-
 }
 
 .company__header-title{
