@@ -129,6 +129,16 @@
         "difference_p": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum porttitor, egestas ullamcorper suscipit et lacus fringilla in nisl leo, iaculis proin."
       }
     },
+    "90eddfb8-4391-4627-a3a5-fe94fc8b4514": {
+      "type": "easily",
+      "settings": {
+        "easily_h2": "Easily add your design to a wide range of products",
+        "column_img": "shopify:\/\/shop_images\/easily_img.png",
+        "easily_p": "Odio dui dictumst tortor ridiculus a condimentum auctor sed, varius etiam nostra molestie interdum arcu neque, enim tellus ullamcorper at lacus.",
+        "easily_btn_text": "Start Selling",
+        "easily_btn_url": ""
+      }
+    },
     "32b1736b-3c50-458e-8fc7-b9ef1e05b2db": {
       "type": "how-it-works",
       "blocks": {
@@ -268,6 +278,7 @@
     "image_banner",
     "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
     "3cdb93ad-ed31-4185-9705-e9a066117ea7",
+    "90eddfb8-4391-4627-a3a5-fe94fc8b4514",
     "32b1736b-3c50-458e-8fc7-b9ef1e05b2db",
     "39656254-1e31-40e6-9dde-d2beab1ff711",
     "4e62a8f6-8589-4111-b4a4-648d24f7474d"
