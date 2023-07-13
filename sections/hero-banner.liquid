@@ -1,0 +1,170 @@
+{{ 'hero-banner.css' | asset_url | stylesheet_tag }}
+
+{%liquid
+  assign background_image = section.settings.background_image 
+  assign heading_title = section.settings.heading_title 
+  assign sub_heading = section.settings.sub_heading 
+  assign button_label = section.settings.button_label 
+  assign button_link = section.settings.button_link
+  assign button_label_2 = section.settings.button_label_2 
+  assign button_link_2 = section.settings.button_link_2 
+  assign card_image = section.settings.card_image 
+%}
+
+{% style %}
+    {% if background_image == blank %}
+        .hero-banner__container {
+            background: #b4b4b4;
+            position: relative;
+        }
+    {% endif %}
+    {% if card_image == blank %}
+        .hero-banner__card-container {
+            transform: translate(-44%,-133%);
+        }
+    {% endif %}
+{% endstyle %}
+
+
+<section class="hero-banner">
+    <div class="hero-banner__container page-width-desktop">
+        {% if background_image != blank %}
+            <img class="hero-banner__banner-img" loading="lazy" width="{{ block.settings.background_image.width }}"   height="{{ block.settings.background_image.height }}" src="{{ background_image | img_url: 'master' }}">
+          {% elsif section.settings.background_image == blank %}
+            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+
+        <div class="{% if background_image == blank %}hero-banner__container-absolute{% endif %}">
+            <div class="hero-banner__heading-container">
+                {% if heading_title != blank %}
+                <h1 class="hero-banner__heading-title">{{ heading_title }}</h1>
+                {% endif %}
+                    <div class="hero-banner__icon-curly">
+                        {% render 'curly' %}
+                    </div>
+                {% if sub_heading != blank %}
+                <p class="hero-banner__subheading">{{ sub_heading }}</p>
+                {% endif %}
+            </div>
+
+            <div class="hero-banner__btn-container">
+                <div class="hero-banner__btn">
+                    {% if button_label != blank %}
+                        <a href="{{ button_link }}" class="hero-banner__button custom_button button--solid">
+                        {{ button_label }}
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="hero-banner__btn">
+                    {% if button_label_2 != blank %}
+                        <a href="{{ button_link_2 }}" class="hero-banner__button custom_button hero-banner--line">
+                        {{ button_label_2 }}
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="hero-banner__image-container">
+                {% for block in section.blocks %}
+                    {% if block.type == 'Banner' %}
+              
+                    {% if block.settings.banner_img != blank %}
+                        <div class="hero-banner__column">
+                            <img class="hero-banner__img" loading="lazy" width="{{ block.settings.banner_img.width }}"   height="{{ block.settings.banner_img.height }}" src="{{ block.settings.banner_img | img_url: 'master' }}" alt="banner_img">
+                        </div>
+                    {%- else -%}
+                    {{ 'image' | placeholder_svg_tag: 'payment-logo' }}
+                    {%- endif -%}
+
+                        {% assign countBlocks = section.blocks | where: 'type', 'Banner' %}
+                        {% assign countBlockCount = countBlocks | size %}
+                        {% if countBlockCount >= block.limit %}
+                        {% break %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="hero-banner__card-image">
+                <div class="hero-banner__card-container">
+                    {% if card_image != blank %}
+                        <img class="hero-banner__img" loading="lazy" width="{{ card_image.width }}"   height="{{ card_image.height }}" src="{{ card_image | img_url: 'master' }}" alt="card_image">
+                        {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'card-image' }}
+                    {%- endif -%}
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "class": "section-header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "heading_title",
+      "label": "Heading"
+    },
+    {
+        "type": "text",
+        "id": "sub_heading",
+        "label": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+    ,
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Button Link 2"
+    },
+    {
+        "type": "image_picker",
+        "id": "card_image",
+        "label": "Center Image"
+    }
+  ],
+  "blocks":[
+    {
+        "type": "Banner",
+        "name": "Banner images",
+        "limit": 2 ,
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "banner_img",
+                "label": "Banner Images"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Hero Banner",
+        "category": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}
