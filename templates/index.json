@@ -131,7 +131,6 @@
     },
     "90eddfb8-4391-4627-a3a5-fe94fc8b4514": {
       "type": "easily",
-      "disabled": true,
       "settings": {
         "easily_h2": "Easily add your design to a wide range of products",
         "column_img": "shopify:\/\/shop_images\/easily_img.png",
@@ -142,6 +141,7 @@
     },
     "32b1736b-3c50-458e-8fc7-b9ef1e05b2db": {
       "type": "how-it-works",
+      "disabled": true,
       "blocks": {
         "e424d6e7-ba90-4b69-9efe-db7549506989": {
           "type": "card",
