@@ -272,6 +272,17 @@
         "subheading": "Mauris blandit nisi bibendum senectus fermentum tincidunt condimentum.",
         "background_image": "shopify:\/\/shop_images\/testimonials_1.png"
       }
+    },
+    "d98eb341-e148-4410-8e34-f6744d5ba03c": {
+      "type": "cta",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/cta.png",
+        "heading_title": "Start making more sales on your store now!",
+        "button_label": "Start for Free",
+        "button_link": "",
+        "button_label_2": "Contact Us",
+        "button_link_2": ""
+      }
     }
   },
   "order": [
@@ -281,6 +292,7 @@
     "90eddfb8-4391-4627-a3a5-fe94fc8b4514",
     "32b1736b-3c50-458e-8fc7-b9ef1e05b2db",
     "39656254-1e31-40e6-9dde-d2beab1ff711",
-    "4e62a8f6-8589-4111-b4a4-648d24f7474d"
+    "4e62a8f6-8589-4111-b4a4-648d24f7474d",
+    "d98eb341-e148-4410-8e34-f6744d5ba03c"
   ]
 }
