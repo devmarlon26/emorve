@@ -93,7 +93,6 @@
     },
     "3cdb93ad-ed31-4185-9705-e9a066117ea7": {
       "type": "difference",
-      "disabled": true,
       "blocks": {
         "3df482a5-536e-496b-8b2f-cfcea8c9a63f": {
           "type": "card",
@@ -192,6 +191,7 @@
     },
     "4e62a8f6-8589-4111-b4a4-648d24f7474d": {
       "type": "testimonial",
+      "disabled": true,
       "blocks": {
         "973f7c74-b939-4098-ac71-67c98efe7306": {
           "type": "Count",
