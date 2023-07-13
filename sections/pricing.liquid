@@ -8,6 +8,14 @@
     assign subheading = section.settings.subheading
 %}
 
+{% style %}
+  {% if background_image == blank %}
+    .pricing--background {
+        background: #b4b4b4;
+    }
+  {% endif %}
+{% endstyle %}
+
 <section class="pricing">
     <div class="pricing__container page-width-desktop">
         <div class="pricing__inner-container pricing--background"> 
@@ -18,52 +26,54 @@
           {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
 
-            <div class="pricing__main-container">
-                <div class="pricing__column">
-                    <h2 class="pricing__heading">
-                        {{ heading_title }}
-                    </h2>
-    
-                    <div class="pricing__sub-container">
-                        {% if btn_label != blank %}
-                            <a href="{{ button_link }}"class="pricing__button button--solid custom_button">{{ btn_label }}</a>
-                        {% endif %}
-                    </div>
-    
-                    <div class="pricing__payment-container">
-                        {% for block in section.blocks %}
-                            {% if block.type == 'Payment' %}
-                        <div class="{% if  section.blocks.size > 0 %}pricing__payment-logo{% else %}pricing__payment{% endif %}">
-                            {% if block.settings.payment != blank %}
-                            <img class="pricing__img-payment" loading="lazy" width="{{ block.settings.payment.width }}"   height="{{ block.settings.payment.height }}" src="{{ block.settings.payment | img_url: 'master' }}" alt="quotation">
-                            {%- else -%}
-                            {{ 'image' | placeholder_svg_tag: 'payment-logo' }}
-                            {%- endif -%}
+            <div class="{% if background_image == blank %}pricing__container-absolute{% endif %}">
+                <div class="pricing__main-container">
+                    <div class="pricing__column">
+                        <h2 class="pricing__heading">
+                            {{ heading_title }}
+                        </h2>
+        
+                        <div class="pricing__sub-container">
+                            {% if btn_label != blank %}
+                                <a href="{{ button_link }}"class="pricing__button button--solid custom_button">{{ btn_label }}</a>
+                            {% endif %}
                         </div>
-                                {% assign countBlocks = section.blocks | where: 'type', 'Payment' %}
-                                {% assign countBlockCount = countBlocks | size %}
-                                {% if countBlockCount >= block.limit %}
-                                {% break %}
+        
+                        <div class="pricing__payment-container">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'Payment' %}
+                            <div class="{% if  section.blocks.size > 0 %}pricing__payment-logo{% else %}pricing__payment{% endif %}">
+                                {% if block.settings.payment != blank %}
+                                <img class="pricing__img-payment" loading="lazy" width="{{ block.settings.payment.width }}"   height="{{ block.settings.payment.height }}" src="{{ block.settings.payment | img_url: 'master' }}" alt="quotation">
+                                {%- else -%}
+                                {{ 'image' | placeholder_svg_tag: 'payment-logo' }}
+                                {%- endif -%}
+                            </div>
+                                    {% assign countBlocks = section.blocks | where: 'type', 'Payment' %}
+                                    {% assign countBlockCount = countBlocks | size %}
+                                    {% if countBlockCount >= block.limit %}
+                                    {% break %}
+                                    {% endif %}
                                 {% endif %}
-                            {% endif %}
-                        {% endfor %}
+                            {% endfor %}
+                        </div>
                     </div>
-                </div>
 
-                <div class="pricing__column pricing--top">
-                    <p class="pricing__sub-heading">{{ subheading }}</p>
-                    <ul class="pricing__list">
-                        {% for block in section.blocks %}
-                            {% if block.type == 'List' %}
-                                <li class="pricing__list-item"> {% render 'checked' %} <p class="pricing__list-description">{{ block.settings.description }}</p> </li>
-                                {% assign countBlocks = section.blocks | where: 'type', 'List' %}
-                                {% assign countBlockCount = countBlocks | size %}
-                                {% if countBlockCount >= block.limit %}
-                                {% break %}
+                    <div class="pricing__column pricing--top">
+                        <p class="pricing__sub-heading">{{ subheading }}</p>
+                        <ul class="pricing__list">
+                            {% for block in section.blocks %}
+                                {% if block.type == 'List' %}
+                                    <li class="pricing__list-item"> {% render 'checked' %} <p class="pricing__list-description">{{ block.settings.description }}</p> </li>
+                                    {% assign countBlocks = section.blocks | where: 'type', 'List' %}
+                                    {% assign countBlockCount = countBlocks | size %}
+                                    {% if countBlockCount >= block.limit %}
+                                    {% break %}
+                                    {% endif %}
                                 {% endif %}
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div  class="pricing__green">
