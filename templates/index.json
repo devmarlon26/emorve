@@ -1,42 +1,34 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "d16e2f3a-2bec-4051-b196-0a7df83cf6e3": {
+      "type": "hero-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "bf34ee95-1fe8-4f00-b811-767e84886109": {
+          "type": "Banner",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "banner_img": "shopify:\/\/shop_images\/Group_1000001655.png"
           }
         },
-        "button": {
-          "type": "buttons",
+        "992436ae-38e2-4f52-958c-4bb14cd8661a": {
+          "type": "Banner",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "banner_img": "shopify:\/\/shop_images\/Group_5.png"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "bf34ee95-1fe8-4f00-b811-767e84886109",
+        "992436ae-38e2-4f52-958c-4bb14cd8661a"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "background_image": "shopify:\/\/shop_images\/banner.png",
+        "heading_title": "Create and sell customized products",
+        "sub_heading": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed, eu phasellus cum volutpat vehicula cursus feugiat parturient tempor.",
+        "button_label": "Start for Free",
+        "button_link": "",
+        "button_label_2": "How it Works",
+        "button_link_2": "",
+        "card_image": "shopify:\/\/shop_images\/hot_products.png"
       }
     },
     "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e": {
@@ -370,7 +362,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "d16e2f3a-2bec-4051-b196-0a7df83cf6e3",
     "e775cc51-7bbd-485a-bfa2-0b0f5465bf0e",
     "3cdb93ad-ed31-4185-9705-e9a066117ea7",
     "90eddfb8-4391-4627-a3a5-fe94fc8b4514",
